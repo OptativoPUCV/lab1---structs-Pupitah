@@ -43,3 +43,26 @@ exercises.c:45:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 1995e41
+Wed 13 Mar 2024 09:19:23 PM UTC: 
+ exercises.c | 6 ------
+ 1 file changed, 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:18:5: error: expected expression before ‘}’ token
+   18 |     }
+      |     ^
+exercises.c: In function ‘reverseArray’:
+exercises.c:29:10: error: unused variable ‘j’ [-Werror=unused-variable]
+   29 |   int i, j;
+      |          ^
+exercises.c:29:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   29 |   int i, j;
+      |       ^
+exercises.c: In function ‘checkSorted’:
+exercises.c:62:7: error: ‘i’ undeclared (first use in this function)
+   62 |   for(i=0; i < size; i ++) //VERIFICADOR ASCENDENTE
+      |       ^
+exercises.c:62:7: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+9acbfd5
