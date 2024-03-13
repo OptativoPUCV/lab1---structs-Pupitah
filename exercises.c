@@ -59,7 +59,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) { 
   if (arr == NULL || size <= 0) {return EXIT_FAILURE;}
-  for(i=0; i < size; i ++) //VERIFICADOR ASCENDENTE
+  for(int i=0; i < size; i ++) //VERIFICADOR ASCENDENTE
     {
       if (arr[i] > arr[i+1])
       {

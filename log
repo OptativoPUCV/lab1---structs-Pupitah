@@ -66,3 +66,21 @@ exercises.c:62:7: note: each undeclared identifier is reported only once for eac
 cc1: all warnings being treated as errors
 Compilation failed
 9acbfd5
+Wed 13 Mar 2024 09:20:18 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:18:5: error: expected expression before ‘}’ token
+   18 |     }
+      |     ^
+exercises.c: In function ‘reverseArray’:
+exercises.c:29:10: error: unused variable ‘j’ [-Werror=unused-variable]
+   29 |   int i, j;
+      |          ^
+exercises.c:29:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   29 |   int i, j;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+8ace66c
