@@ -52,7 +52,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int contador = 0;
   
   for(int i = 0; i < size; i++){
-    if (arr[i] % 2 = 0) {contador++;}
+    if (arr[i] % 2 == 0) {contador++;}
   }
 
   int *evenArr = (int *)malloc(contador * sizeof(int));
