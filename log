@@ -105,3 +105,13 @@ exercises.c:44:16: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 6053046
+Sun 17 Mar 2024 12:49:52 AM UTC: 
+ exercises.c | 31 ++++++++++++++++++++++++++++---
+ 1 file changed, 28 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:55:20: error: lvalue required as left operand of assignment
+   55 |     if (arr[i] % 2 = 0) {contador++;}
+      |                    ^
+Compilation failed
+485f322

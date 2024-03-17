@@ -26,8 +26,17 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
-  int i, j;
-  
+  int start = 0;
+  int end = size - 1;
+
+  while (start < end)
+  {
+    int temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
+  }
 }
 
 /*
@@ -39,10 +48,26 @@ los números pares del arreglo original.
 
 
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
-  
-  for(int i = 0; i < )
-  return NULL; }
 
+  int contador = 0;
+  
+  for(int i = 0; i < size; i++){
+    if (arr[i] % 2 = 0) {contador++;}
+  }
+
+  int *evenArr = (int *)malloc(contador * sizeof(int));
+  int j = 0;
+
+  for (int i = 0; i < size; i++){
+    if (arr[i] % 2 == 0){
+      evenArr[j] = arr[i];
+      j++;
+    }
+  }
+
+  *newSize = contador;
+  return evenArr;
+}
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
 Descripción: Escribe una función que tome dos arreglos
