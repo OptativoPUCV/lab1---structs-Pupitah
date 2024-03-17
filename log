@@ -145,3 +145,14 @@ Sun 17 Mar 2024 01:14:20 AM UTC:
  tests:  0|3
 total_score: 40/70
 d101ebf
+Sun 17 Mar 2024 01:19:51 AM UTC: 
+ exercises.c | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:196:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  196 |     if (inicio = NULL) {
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+27d8abc
