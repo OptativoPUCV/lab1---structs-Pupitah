@@ -139,3 +139,9 @@ exercises.c:82:9: error: ‘arr’ undeclared (first use in this function); did 
 exercises.c:82:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 9ae7697
+Sun 17 Mar 2024 01:14:20 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|3
+total_score: 40/70
+d101ebf
