@@ -84,3 +84,24 @@ exercises.c:29:7: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8ace66c
+Sun 17 Mar 2024 12:37:34 AM UTC: 
+ exercises.c | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:29:10: error: unused variable ‘j’ [-Werror=unused-variable]
+   29 |   int i, j;
+      |          ^
+exercises.c:29:7: error: unused variable ‘i’ [-Werror=unused-variable]
+   29 |   int i, j;
+      |       ^
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:43:22: error: expected expression before ‘)’ token
+   43 |   for(int i = 0; i < )
+      |                      ^
+exercises.c:44:16: error: control reaches end of non-void function [-Werror=return-type]
+   44 |   return NULL; }
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+6053046

@@ -13,12 +13,12 @@ int findMax(int arr[], int size) {
   int max = arr[0];
   for (int i = 1; i < size; i++)
     {
-      if (arr[i] > max)
-      
+      if (arr[i] > max){
+      max = arr[i];
+      }
     }
-  
-  
-  return 0; }
+  return max; 
+  }
 
 /*
 Ejercicio 2: Invertir un Arreglo
@@ -40,6 +40,7 @@ los números pares del arreglo original.
 
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
   
+  for(int i = 0; i < )
   return NULL; }
 
 /*
